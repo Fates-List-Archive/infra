@@ -1,0 +1,5 @@
+[flake8]
+# Disable W291,W293 since those are spammy
+# E124 is something of personal preference tbh
+# W503/W504 - https://stackoverflow.com/questions/57074300/what-is-the-recommended-way-to-break-long-if-statement-w504-line-break-after-b
+ignore = W291,W293,W503,W504,E124

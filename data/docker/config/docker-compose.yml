@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:14.0
+    container_name: snowfall.postgres
+    ports:
+      - "127.0.0.1:1000:5432"
+    env_file:
+      - /snowfall/docker/env.pg
+    volumes:
+      - /snowfall/docker/db/postgres:/var/lib/postgresql/data
+      - /snowfall/docker/scripts/postgres:/docker-entrypoint-initdb.d
+    restart: always
+  
+  redis:
+    image: redis:6.2.4
+    container_name: snowfall.redis
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "127.0.0.1:1001:6379"
+    volumes:
+      - /snowfall/docker/db/redis:/data
+      - /snowfall/docker/scripts/redis:/docker-entrypoint-initdb.d
+    restart: always

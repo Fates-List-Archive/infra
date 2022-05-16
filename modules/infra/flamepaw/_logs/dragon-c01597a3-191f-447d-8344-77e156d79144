@@ -1,0 +1,109 @@
+[36mINFO[0m[0000] Testing https://fateslist.xyz with method GET 
+[36mINFO[0m[0000] PASS: With status code 200                   
+[36mINFO[0m[0000] Testing https://fateslist.xyz/frostpaw/search?target_type=bot&q=mew with method GET 
+[36mINFO[0m[0000] PASS: With status code 200                   
+[36mINFO[0m[0000] Testing https://fateslist.xyz/frostpaw/search?target_type=server&q=mew with method GET 
+[36mINFO[0m[0000] PASS: With status code 200                   
+[36mINFO[0m[0000] Testing https://fateslist.xyz/mewbot with method GET 
+[36mINFO[0m[0000] PASS: With status code 200                   
+[36mINFO[0m[0000] Testing https://fateslist.xyz/furry with method GET 
+[36mINFO[0m[0000] PASS: With status code 200                   
+[36mINFO[0m[0000] Testing https://fateslist.xyz/_private with method GET 
+[36mINFO[0m[0000] PASS: With status code 404                   
+[36mINFO[0m[0000] Testing https://fateslist.xyz/frostpaw/tos with method GET 
+[36mINFO[0m[0000] PASS: With status code 200                   
+[36mINFO[0m[0000] Testing https://fateslist.xyz/frostpaw/thisshouldfail/maga2024 with method GET 
+[36mINFO[0m[0000] PASS: With status code 404                   
+[36mINFO[0m[0000] Testing https://fateslist.xyz/bot/519850436899897346 with method GET 
+[36mINFO[0m[0000] PASS: With status code 200                   
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/bots/0/random with method GET 
+[36mINFO[0m[0000] PASS: With status code 200                   
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=4 with method GET 
+[31mERRO[0m[0000] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=1 with method GET 
+[31mERRO[0m[0000] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=1 with method GET 
+[31mERRO[0m[0000] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=0 with method GET 
+[31mERRO[0m[0000] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=3 with method GET 
+[31mERRO[0m[0000] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=0 with method GET 
+[31mERRO[0m[0000] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=6 with method GET 
+[31mERRO[0m[0000] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=2 with method GET 
+[31mERRO[0m[0000] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=3 with method GET 
+[31mERRO[0m[0000] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0000] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=1 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=6 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=4 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=2 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=0 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=6 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=2 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=4 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=2 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=2 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=6 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=0 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=6 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=1 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=0 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=3 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=0 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=2 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=0 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=4 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=5 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=0 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=6 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=3 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=0 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=5 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=6 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=5 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=0 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=5 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=6 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/519850436899897346?page=1 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/101?page=4 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/thisshouldfail?page=1 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Testing https://api.fateslist.xyz/_sunbeam/reviews/1818181818188181818181818181?page=0 with method GET 
+[31mERRO[0m[0001] FAIL: Expected status code 200/404/400 but got status code 422 
+[36mINFO[0m[0001] Result: 54 tests done with 10 successful     

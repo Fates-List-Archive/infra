@@ -1,0 +1,39 @@
+{
+    "servers": {
+        "main": "789934742128558080",
+        "testing": "931893344248938506",
+        "staff": "931893344248938506"
+    },
+    "roles": {
+        "staff_ping_add_role": "836326316188893275",
+        "i_love_pings_role": "848602909687676998",
+        "news_ping_role": "848608405933129769",
+        "giveaway_ping_role": "904288064426348586",
+        "bot_dev_role": "836326314344185876",
+        "bots_role": "836326315946672158",
+        "certified_bots_role": "836326315203887195",
+        "certified_dev_role": "836326313283026995",
+        "bronze_user_role": "880019238453116929",
+        "test_server_bots_role": "935170443663527977",
+        "staff_server_access_granted_role": "931893803260985355"
+    },
+    "channels": {
+        "bot_logs": "836326348326043648",
+        "server_logs": "837048691965034496",
+        "appeals_channel": "836326351387623454",
+        "staff_apps_channel": "936265871784018010",
+        "site_errors_channel": "836326323281592330",
+        "roles_channel": "848605596936437791",
+	    "main_support_channel": "838648883675922462",
+        "github_channel": "836326337375109191",
+        "vote_reminder_channel": "939123825885474898",
+        "stats_channel": "847766984020197387"
+    },
+    "oauth": {
+        "client_id": "798951566634778641",
+        "redirect_uri": ""
+    },
+    "owner": "563808552288780322",
+    "server_bot_invite": "https://discord.com/api/oauth2/authorize?client_id=811073947382579200&permissions=67649&scope=bot%20applications.commands",
+    "support_server": ""
+}

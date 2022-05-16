@@ -1,0 +1,17 @@
+(runtime.errorString) (len=49) runtime error: invalid memory address or nil pointer dereference
+
+goroutine 1 [running]:
+runtime/debug.Stack()
+	/home/meow/src/go/src/runtime/debug/stack.go:24 +0x65
+flamepaw/common.PanicDump()
+	/home/meow/FatesList/modules/infra/flamepaw/common/misc.go:16 +0x7c
+panic({0xc32f00, 0x1370d70})
+	/home/meow/src/go/src/runtime/panic.go:838 +0x207
+github.com/Fates-List/discordgo.(*Session).addEventHandler(0x0, {0xe50a48?, 0xc0000bb098})
+	/home/meow/go/pkg/mod/github.com/!fates-!list/discordgo@v0.23.3-0.20220209022622-68ede5be8bc8/event.go:66 +0x63
+github.com/Fates-List/discordgo.(*Session).AddHandler(0x0, {0xbfe3e0?, 0xc0000bb098?})
+	/home/meow/go/pkg/mod/github.com/!fates-!list/discordgo@v0.23.3-0.20220209022622-68ede5be8bc8/event.go:128 +0x86
+flamepaw/cli.Server()
+	/home/meow/FatesList/modules/infra/flamepaw/cli/cli.go:185 +0x1ef
+main.main()
+	/home/meow/FatesList/modules/infra/flamepaw/main.go:61 +0xcf

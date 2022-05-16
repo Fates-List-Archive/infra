@@ -1,0 +1,20 @@
+{
+	"ongoing": true,
+	"incidents": {
+		"7ed7d5d0-9d47-4bde-8a27-102c57fbf25b": {
+			"name": "Test incident",
+			"description": "Test description",
+			"follow_ups": {
+				"6a864c5a-3d53-41ce-bb0b-e5c8277fac6f": {
+					"type": 1,
+					"title": "Investigating server issues",
+					"description": "Testing testing meow meow meow",
+					"time": 1624377156
+				}
+			},
+			"severity": 1,
+			"ongoing": false,
+			"time": 1624377156
+		}
+	}
+}

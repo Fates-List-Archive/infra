@@ -1,0 +1,14 @@
+{
+    "1": {
+        "type": "global",
+        "desc": "you cannot/will not be able to login or access the support server"
+    },
+    "2": {
+        "type": "profile edit",
+        "desc": "you will not be able to edit your profile"
+    },
+    "3": {
+        "type": "data deletion request",
+        "desc": "you can contact modmail to be unbanned"
+    }
+}
