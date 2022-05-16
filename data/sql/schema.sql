@@ -330,7 +330,7 @@ CREATE TABLE user_connections (
    user_id bigint not null,
    client_id text not null,
    refresh_token text not null,
-   expires_on timestamptz NOW() + interval '1 week',
+   expires_on timestamptz DEFAULT NOW() + interval '1 week',
    CONSTRAINT user_fk FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
