@@ -243,7 +243,7 @@ CREATE TABLE review_votes (
     id uuid not null REFERENCES reviews (id) ON DELETE CASCADE ON UPDATE CASCADE,
     user_id bigint not null,
     upvote BOOLEAN NOT NULL,
-    CONSTRAINT users_fk FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE ON UPDATE CASCADE
+    CONSTRAINT users_fk FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE ON UPDATE CASCADE,
     PRIMARY KEY(id, user_id)
 );
 
@@ -310,8 +310,7 @@ CREATE TABLE servers (
     long_description_type integer default 0,
     css text default '',
     api_token text not null unique,
-    extra_links jsonb not null default '{}'
-    website text,
+    extra_links jsonb not null default '{}',
     created_at timestamptz not null default now(),
     invite_amount integer DEFAULT 0,
     invite_url text,
