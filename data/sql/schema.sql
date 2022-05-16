@@ -40,6 +40,30 @@ INSERT INTO features VALUES (
     'These bots offer services related to cryptocurrency which is considered negative by users'
 );
 
+CREATE TABLE users (
+    id bigint not null, -- Used by piccolo, must be equal to user_id
+    user_id bigint not null unique,
+    api_token text not null,
+    description text DEFAULT 'This user prefers to be an enigma',
+    badges text[],
+    username text,
+    extra_links jsonb not null default '{}',
+    user_css text not null default '',
+    profile_css text not null default '',
+    state integer not null default 0, -- 0 = No Ban, 1 = Global Ban
+    coins INTEGER DEFAULT 0,
+    js_allowed BOOLEAN DEFAULT false,
+    vote_reminders bigint[] not null default '{}',
+    vote_reminders_servers bigint[] not null default '{}',
+    vote_reminder_channel bigint,
+    vote_reminder_servers_channel bigint,
+    vote_reminders_last_acked timestamptz not null default now(),
+    vote_reminders_servers_last_acked timestamptz not null default now(),
+    staff_verify_code text,
+    experiments integer[] not null default '{}',
+    flags integer[] not null default '{}'
+);
+
 CREATE TABLE bots (
     id BIGINT NOT NULL, -- Used by piccolo, must be equal to bot_id
     flags integer[] not null default '{}',
@@ -83,7 +107,7 @@ CREATE TABLE bots (
     di_text text
 );
 
-CREATE INDEX bots_ext_index ON bots (username_cached, created_at, prefix, privacy_policy, page_style); 
+CREATE INDEX bots_ext_index ON bots (username_cached, created_at, prefix, page_style); 
 
 CREATE TABLE resources (
     id uuid primary key DEFAULT uuid_generate_v4(),
@@ -147,7 +171,7 @@ CREATE TABLE bot_packs (
 );
 
 CREATE TABLE bot_commands (
-   id uuid DEFAULT not null uuid_generate_v4(),
+   id uuid not null DEFAULT uuid_generate_v4(),
    bot_id bigint not null,
    cmd_type integer not null, -- 0 = no, 1 = guild, 2 = global
    groups text[] not null default '{Default}',
@@ -196,30 +220,6 @@ CREATE TABLE user_server_vote_table (
 	guild_id bigint NOT NULL,
 	expires_on timestamptz DEFAULT NOW() + '8 hours',
     CONSTRAINT users_fk FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE ON UPDATE CASCADE
-);
-
-CREATE TABLE users (
-    id bigint not null, -- Used by piccolo, must be equal to user_id
-    user_id bigint not null unique,
-    api_token text not null,
-    description text DEFAULT 'This user prefers to be an enigma',
-    badges text[],
-    username text,
-    extra_links jsonb not null default '{}',
-    user_css text not null default '',
-    profile_css text not null default '',
-    state integer not null default 0, -- 0 = No Ban, 1 = Global Ban
-    coins INTEGER DEFAULT 0,
-    js_allowed BOOLEAN DEFAULT false,
-    vote_reminders bigint[] not null default '{}',
-    vote_reminders_servers bigint[] not null default '{}',
-    vote_reminder_channel bigint,
-    vote_reminder_servers_channel bigint,
-    vote_reminders_last_acked timestamptz not null default now(),
-    vote_reminders_servers_last_acked timestamptz not null default now(),
-    staff_verify_code text,
-    experiments integer[] not null default '{}',
-    flags integer[] not null default '{}'
 );
 
 CREATE TABLE reviews (
