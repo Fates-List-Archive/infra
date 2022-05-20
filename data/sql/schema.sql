@@ -164,10 +164,10 @@ CREATE TABLE bot_packs (
    icon text,
    banner text,
    created_at timestamptz DEFAULT NOW(),
-   owner bigint,
-   bots bigint[],
-   description text,
-   name text
+   owner bigint not null,
+   bots bigint[] not null default '{}',
+   description text not null,
+   name text not null
 );
 
 CREATE TABLE bot_commands (
