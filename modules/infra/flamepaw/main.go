@@ -28,7 +28,7 @@ func main() {
 	} else if common.CliCmd == "test" {
 		cli.Test()
 	} else {
-		cmdFunc := strings.Replace(common.CliCmd, ".", "_", -1)
+		cmdFunc := strings.ReplaceAll(common.CliCmd, ".", "_")
 		pyCmd := "from modules.core._manage import " + cmdFunc + "; " + cmdFunc + "()"
 		log.Info("Running " + common.PythonPath + " -c '" + pyCmd + "'")
 		os.Setenv("MAIN_TOKEN", common.MainBotToken)
