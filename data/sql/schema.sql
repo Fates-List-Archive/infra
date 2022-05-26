@@ -257,30 +257,21 @@ CREATE TABLE user_bot_logs (
     CONSTRAINT users_fk FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE events (
+CREATE TABLE bot_events (
+    id uuid not null default uuid_generate_v4(),
+    bot_id BIGINT NOT NULL,
+    type integer not null,
+    ts timestamptz not null default NOW(),
+    reason text not null,
+    css text not null default '',
+    CONSTRAINT bots_fk FOREIGN KEY (bot_id) REFERENCES bots(bot_id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE ws_events (
     id BIGINT not null, 
     type TEXT NOT NULL,
     ts timestamptz not null default now(),
     event jsonb not null
-);
-
-CREATE TABLE bot_promotions (
-   id uuid primary key DEFAULT uuid_generate_v4(),
-   bot_id bigint,
-   title text,
-   info text,
-   css text,
-   type integer default 3, -- 1 = announcement, 2 = promo, 3 = generic
-   CONSTRAINT bots_fk FOREIGN KEY (bot_id) REFERENCES bots(bot_id) ON DELETE CASCADE ON UPDATE CASCADE
-);
-
-CREATE TABLE bot_maint (
-   id uuid primary key DEFAULT uuid_generate_v4(),
-   bot_id bigint,
-   reason text,
-   type integer,
-   epoch bigint,
-   CONSTRAINT bots_fk FOREIGN KEY (bot_id) REFERENCES bots(bot_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE vanity (
