@@ -29,6 +29,12 @@
         "perm": 4,
         "fname": "Admin"
     },
+    "extra_data_manager": {
+        "id": "981955373772713985",
+        "staff_id": "981955885712678912",
+        "perm": 2.5,
+        "fname": "Extra Data Manager"
+    },
     "developer": {
         "id": "836326304860078160",
         "staff_id": "935177591755792424",
