@@ -29,17 +29,17 @@
         "perm": 4,
         "fname": "Admin"
     },
-    "developer": {
-        "id": "836326304860078160",
-        "staff_id": "935177591755792424",
-        "perm": 5,
-        "fname": "Developer"
-    },
     "head_admin": {
         "id": "836349482340843572",
         "staff_id": "935173027845533738",
         "perm": 6,
         "fname": "Head Admin"
+    },
+    "developer": {
+        "id": "836326304860078160",
+        "staff_id": "935177591755792424",
+        "perm": 6.5,
+        "fname": "Developer"
     },
     "overseer": {
         "id": "836326299223195738",
