@@ -43,6 +43,9 @@ INSERT INTO features VALUES (
 CREATE TABLE users (
     id bigint not null, -- Used by piccolo, must be equal to user_id
     user_id bigint not null unique,
+    supabase_id uuid, -- Lynx
+    totp_shared_key text, -- Lynx
+    staff_password text, -- Lynx
     api_token text not null,
     description text DEFAULT 'This user prefers to be an enigma',
     badges text[],
@@ -63,6 +66,8 @@ CREATE TABLE users (
     experiments integer[] not null default '{}',
     flags integer[] not null default '{}'
 );
+
+CREATE TABLE extra_data (name TEXT, value JSONB, user_id BIGINT, CONSTRAINT users_fk FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE ON UPDATE CASCADE);
 
 CREATE TABLE bots (
     id BIGINT NOT NULL, -- Used by piccolo, must be equal to bot_id

@@ -81,6 +81,7 @@ def db_backup():
     logger.info("Starting backups")
 
     bak_id = datetime.datetime.now().strftime("%Y-%m-%d~%H:%M:%S")
+    print(f"Backup ID is {bak_id}")
     cmd = f"pg_dump -Fc > /backups/full-{bak_id}.bak"
 
     with Popen(cmd, shell=True, env=os.environ) as proc:
@@ -96,6 +97,11 @@ def db_backup():
     Path("/backups/latest.bak").symlink_to(f"/backups/full-{bak_id}.bak")
     cmd = f"pg_dump -Fc --schema-only --no-owner > /backups/schema-{bak_id}.bak"
 
+    with Popen(cmd, shell=True, env=os.environ) as proc:
+        proc.wait()
+
+    # Copy schema to api-v3/schemas/schema
+    cmd = f"cp -vf /backups/schema-{bak_id}.bak ~/api-v3/schemas/schema.sql"
     with Popen(cmd, shell=True, env=os.environ) as proc:
         proc.wait()
 
@@ -116,7 +122,7 @@ def db_backup():
 
         # Copy out of FatesList directory
         for f in Path("FatesList").glob("*.bin"):
-            if local_recv:
+            if local_recv and local_recv.startswith("http"):
                 print(f, f" is being pushed on to {local_recv}")
                 with open(str(f), "rb") as f:
                     files = {"file": ("fb/"+f.name, f, "multipart/form-data")}
