@@ -1,0 +1,26 @@
+[
+	{
+		"name": "baypaw",
+		"script": "unbuffer make run",
+		"cwd": "../baypaw"
+	},
+	{
+		"name": "api-v3",
+		"script": "unbuffer make run",
+		"cwd": "../api-v3"
+	},
+	{
+		"name": "flamepaw",
+		"script": "unbuffer flamepaw --cmd server"
+	},
+	{
+		"name": "helper",
+		"script": "unbuffer make run",
+		"cwd": "../fates-list-helper"
+	},
+	{
+		"name": "lynx",
+		"script": "unbuffer ./runprod",
+		"cwd": "../lynx"
+	}
+]
