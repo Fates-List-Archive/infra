@@ -22,5 +22,10 @@
 		"name": "lynx",
 		"script": "unbuffer ./runprod",
 		"cwd": "../lynx"
+	},
+	{
+		"name": "electrodragon",
+		"script": "unbuffer ./wv2",
+		"cwd": "../electrodragon"
 	}
 ]
