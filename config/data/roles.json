@@ -1,12 +1,12 @@
 {
    "fates_booster": {
      "fname": "Fates Booster",
-     "flag": 6,
-     "id": "789940244350631938"
+     "flag": 4,
+     "id": 789940244350631938
    },
    "fates_list_premium": {
      "fname": "Fates List Premium",
-     "flag": 6,
-     "id": "991059198727057438"
+     "flag": 4,
+     "id": 991059198727057438
    }
 }
