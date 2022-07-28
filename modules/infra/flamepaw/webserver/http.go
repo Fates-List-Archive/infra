@@ -423,7 +423,7 @@ func StartWebserver(db *pgxpool.Pool, redis *redis.Client, discord *discordgo.Se
 		apiReturn(c, 200, true, nil, nil)
 	})
 
-	err := r.Run("127.0.0.1:1292")
+	err := r.Run("127.0.0.1:1293")
 	if err != nil {
 		log.Fatal("could not start listening: ", err)
 		return
