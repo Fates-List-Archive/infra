@@ -1,8 +1,8 @@
 {
     "servers": {
-        "main": "789934742128558080",
-        "testing": "931893344248938506",
-        "staff": "931893344248938506"
+        "main": "728872914346311701",
+        "testing": "728872914346311701",
+        "staff": "728872914346311701"
     },
     "roles": {
         "staff_ping_add_role": "836326316188893275",
@@ -24,7 +24,7 @@
         "staff_apps_channel": "936265871784018010",
         "site_errors_channel": "836326323281592330",
         "roles_channel": "848605596936437791",
-	    "main_support_channel": "838648883675922462",
+	"main_support_channel": "838648883675922462",
         "github_channel": "836326337375109191",
         "vote_reminder_channel": "939123825885474898",
         "stats_channel": "847766984020197387"
@@ -34,6 +34,6 @@
         "redirect_uri": ""
     },
     "owner": "563808552288780322",
-    "server_bot_invite": "https://discord.com/api/oauth2/authorize?client_id=811073947382579200&permissions=67649&scope=bot%20applications.commands",
-    "support_server": ""
+    "server_bot_invite": "https://discord.com/api/oauth2/authorize?client_id=1145992334740303934&permissions=67649&scope=bot%20applications.commands",
+    "support_server": "https://discord.gg/WNaFxkgF"
 }

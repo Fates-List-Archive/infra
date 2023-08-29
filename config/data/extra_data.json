@@ -107,8 +107,8 @@
         "es": "Spanish/Español",
         "it": "Italian"
     },
-    "site": "fateslist.xyz",
-    "pg_user": "postgres",
+    "site": "fates.select-list.xyz",
+    "pg_user": "fates",
     "api_version_curr": 2,
     "int64_max": "9223372036854775807",
     "sentry_dsn": "https://3eef9f0f55544a72897afc7d6d6d7be8@o578682.ingest.sentry.io/5735055"
