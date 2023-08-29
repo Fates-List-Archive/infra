@@ -57,23 +57,25 @@ func Test() {
 	log.SetOutput(mw)
 
 	// Tests
-	tests.TestURLStatus("GET", "https://fateslist.xyz", 200)
-	tests.TestURLStatus("GET", "https://fateslist.xyz/frostpaw/search?target_type=bot&q=mew", 200)
-	tests.TestURLStatus("GET", "https://fateslist.xyz/frostpaw/search?target_type=server&q=mew", 200)
-	tests.TestURLStatus("GET", "https://fateslist.xyz/mewbot", 200)
-	tests.TestURLStatus("GET", "https://fateslist.xyz/furry", 200)
-	tests.TestURLStatus("GET", "https://fateslist.xyz/_private", 404)
-	tests.TestURLStatus("GET", "https://fateslist.xyz/frostpaw/tos", 200)
-	tests.TestURLStatus("GET", "https://fateslist.xyz/frostpaw/thisshouldfail/maga2024", 404)
-	tests.TestURLStatus("GET", "https://fateslist.xyz/bot/519850436899897346", 200)
-	tests.TestURLStatus("GET", "https://api.fateslist.xyz/bots/0/random", 200)
+	const fUrl = "https://fates.select-list.xyz"
+	const apiUrl = "https://fates-api.select-list.xyz"
+	tests.TestURLStatus("GET", fUrl, 200)
+	tests.TestURLStatus("GET", fUrl+"/frostpaw/search?target_type=bot&q=mew", 200)
+	tests.TestURLStatus("GET", fUrl+"/frostpaw/search?target_type=server&q=mew", 200)
+	tests.TestURLStatus("GET", fUrl+"/mewbot", 200)
+	tests.TestURLStatus("GET", fUrl+"/furry", 200)
+	tests.TestURLStatus("GET", fUrl+"/_private", 404)
+	tests.TestURLStatus("GET", fUrl+"/frostpaw/tos", 200)
+	tests.TestURLStatus("GET", fUrl+"/frostpaw/thisshouldfail/maga2024", 404)
+	tests.TestURLStatus("GET", fUrl+"/bot/519850436899897346", 200)
+	tests.TestURLStatus("GET", apiUrl+"/bots/0/random", 200)
 
 	// Review html testing
 	bots := []string{"519850436899897346", "101", "thisshouldfail", "1818181818188181818181818181"}
 	var i int
 	for i <= 10 {
 		for _, bot := range bots {
-			tests.TestURLStatus("GET", "https://api.fateslist.xyz/reviews/"+bot+"?target_type=0&page="+rPage(), 200, 404, 400, 422)
+			tests.TestURLStatus("GET", apiUrl+"/reviews/"+bot+"?target_type=0&page="+rPage(), 200, 404, 400, 422)
 		}
 		i += 1
 	}
@@ -81,7 +83,7 @@ func Test() {
 }
 
 func Server() {
-	db, err = pgxpool.Connect(ctx, "")
+	db, err = pgxpool.Connect(ctx, "postgresql:///fateslist")
 	if err != nil {
 		panic(err)
 	}
@@ -131,7 +133,7 @@ func Server() {
 	}
 
 	rdb = redis.NewClient(&redis.Options{
-		Addr:     "localhost:1001",
+		Addr:     "localhost:6379",
 		Password: "",
 		DB:       1,
 	})
