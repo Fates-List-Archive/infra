@@ -38,8 +38,9 @@
         "smarty",
         "md_in_html"
     ],
+    "icon_url": "https://fates-api.select-list.xyz/static/botlisticon.webp",
     "auth_namespaces": {
-        "site": "https://fateslist.xyz/fates/login-confirm"
+        "site": "https://fates-api.select-list.xyz/fates/login-confirm"
     },
     "special_badges": [
         {
