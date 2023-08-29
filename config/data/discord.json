@@ -35,5 +35,7 @@
     },
     "owner": "563808552288780322",
     "server_bot_invite": "https://discord.com/api/oauth2/authorize?client_id=1145992334740303934&permissions=67649&scope=bot%20applications.commands",
-    "support_server": "https://discord.gg/WNaFxkgF"
+    "support_server": "https://discord.gg/WNaFxkgF",
+    "fates_api_url": "https://fates-api.select-list.xyz",
+    "allowed_oauth2": ["fates.select-list.xyz", "select-list.xyz"]
 }
