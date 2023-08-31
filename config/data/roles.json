@@ -1,22 +1,22 @@
 {
-   "fates_booster": {
-     "fname": "Fates Booster",
+   "select-list_booster": {
+     "fname": "Select List - Booster",
      "flag": 4,
-     "id": 789940244350631938
+     "id": 1003501863716540507
    },
-   "fates_list_premium": {
-     "fname": "Fates List Premium",
+   "select_list_premium": {
+     "fname": "Select List - Premium",
      "flag": 4,
-     "id": 991059198727057438
+     "id": 1146530367399014431
    },
    "Staff": {
      "fname": "Staff",
      "flag": 2,
-     "id": 996499823744266322
+     "id": 1001610273397936270
    },
    "Failure": {
      "fname": "Failure",
      "flag": 5,
-     "id": 999656407706112032
+     "id": 1146530210171322388
    }
 }

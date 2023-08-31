@@ -1,41 +1,39 @@
 {
     "servers": {
-        "main": "728872914346311701",
-        "testing": "728872914346311701",
-        "staff": "728872914346311701"
+        "main": "1001583335191093278",
+        "testing": "931893344248938506",
+        "staff": "1018987692261912637"
     },
     "roles": {
-        "staff_ping_add_role": "836326316188893275",
-        "i_love_pings_role": "848602909687676998",
-        "news_ping_role": "848608405933129769",
-        "giveaway_ping_role": "904288064426348586",
-        "bot_dev_role": "836326314344185876",
-        "bots_role": "836326315946672158",
-        "certified_bots_role": "836326315203887195",
-        "certified_dev_role": "836326313283026995",
-        "bronze_user_role": "880019238453116929",
+        "staff_ping_add_role": "1001610273397936270",
+        "i_love_pings_role": "1001610273397936270",
+        "bot_dev_role": "1040386158296830122",
+        "bots_role": "1034265544045633577",
+        "certified_bots_role": "1146528925212758086",
+        "certified_dev_role": "1146528976072867890",
+        "bronze_user_role": "1146529210895188059",
         "test_server_bots_role": "935170443663527977",
-        "staff_server_access_granted_role": "931893803260985355"
+        "staff_server_access_granted_role": "1019431533154664488"
     },
     "channels": {
-        "bot_logs": "836326348326043648",
-        "server_logs": "837048691965034496",
-        "appeals_channel": "836326351387623454",
-        "staff_apps_channel": "936265871784018010",
-        "site_errors_channel": "836326323281592330",
-        "roles_channel": "848605596936437791",
-	"main_support_channel": "838648883675922462",
-        "github_channel": "836326337375109191",
-        "vote_reminder_channel": "939123825885474898",
-        "stats_channel": "847766984020197387"
+        "bot_logs": "1043793587013427200",
+        "server_logs": "1001590213400870952",
+        "appeals_channel": "1001590213400870952",
+        "staff_apps_channel": "1001590213400870952",
+        "site_errors_channel": "1001590213400870952",
+        "roles_channel": "1008153938966614088",
+        "main_support_channel": "1001585941858746418",
+        "github_channel": "1024413560580886549",
+        "vote_reminder_channel": "1001585941858746418",
+        "stats_channel": "1007518711202201650"
     },
     "oauth": {
-        "client_id": "798951566634778641",
+        "client_id": "1001624224538050570",
         "redirect_uri": ""
     },
-    "owner": "563808552288780322",
-    "server_bot_invite": "https://discord.com/api/oauth2/authorize?client_id=1145992334740303934&permissions=67649&scope=bot%20applications.commands",
-    "support_server": "https://discord.gg/WNaFxkgF",
+    "owner": "564164277251080208",
+    "server_bot_invite": "https://discord.com/api/oauth2/authorize?client_id=1001624224538050570&permissions=67649&scope=bot%20applications.commands",
+    "support_server": "https://discord.gg/XdGs8WFFtK",
     "site_url": "https://fates.select-list.xyz",
     "fates_api_url": "https://fates-api.select-list.xyz",
     "allowed_oauth2": ["fates.select-list.xyz", "select-list.xyz"]
